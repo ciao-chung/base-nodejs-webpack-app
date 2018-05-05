@@ -20,3 +20,16 @@ npm run build
 ```bash
 npm run dev
 ```
+
+**Production mode**
+> This script will build app and copy bundled app to prod folder
+
+```bash
+npm run prod
+```
+
+**Clean up prod folder**
+
+```bash
+npm run prod:clean
+```
