@@ -38,3 +38,8 @@ npm run prod:clean
 ```bash
 npm run unit
 ```
+
+**Run mocha unit test with specify file or path**
+```bash
+npm run unit:single test/unit/specs/Example.spec.js
+```
