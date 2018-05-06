@@ -20,6 +20,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.json'],
+    modules: [
+      resolve('src'),
+    ],
     alias: {
       'src': resolve('src'),
       'static': path.resolve(__dirname, '../static'),

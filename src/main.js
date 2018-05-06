@@ -1,2 +1,3 @@
 import chalk from 'chalk'
-console.log(chalk.cyan('app start...'))
+console.log(chalk.cyan('App start...'))
+export default 'foo'

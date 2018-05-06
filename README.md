@@ -33,3 +33,8 @@ npm run prod
 ```bash
 npm run prod:clean
 ```
+
+**Run mocha unit test**
+```bash
+npm run unit
+```
