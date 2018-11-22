@@ -1,7 +1,6 @@
 'use strict'
 const path = require('path')
 const config = require('../config')
-const nodeExternals = require('webpack-node-externals')
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
@@ -9,7 +8,6 @@ function resolve (dir) {
 module.exports = {
   target: 'node',
   context: path.resolve(__dirname, '../'),
-  externals: [nodeExternals()],
   entry: {
     app: ['./src/main.js']
   },
@@ -25,6 +23,7 @@ module.exports = {
     extensions: ['.js', '.json'],
     modules: [
       resolve('src'),
+      'node_modules'
     ],
     alias: {
       'src': resolve('src'),
