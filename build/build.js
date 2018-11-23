@@ -15,8 +15,6 @@ const assetsPath = path.join(config.build.assetsRoot, config.build.assetsSubDire
 exec(`rm -rf ${config.build.assetsRoot}`)
 mkdir('-p', assetsPath)
 cp('-R', 'static/*', assetsPath)
-cp('-R', 'copyfile/.htaccess', config.build.assetsRoot)
-cp('-R', 'copyfile/*', config.build.assetsRoot)
 
 const spinner = ora('building for production...')
 spinner.start()
